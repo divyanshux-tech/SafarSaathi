@@ -1,7 +1,8 @@
 from sqlalchemy import Boolean, Column, Integer, String
+from sqlalchemy.orm import relationship
+
 from app.database.base import Base
 
-from sqlalchemy.orm import relationship
 
 class User(Base):
     __tablename__ = "users"
@@ -12,10 +13,5 @@ class User(Base):
     password_hash = Column(String(255), nullable=False)
     is_active = Column(Boolean, default=True, nullable=False)
 
-    travel_profile = relationship(
-    "TravelProfile",
-    back_populates="user",
-    uselist=False,
-    cascade="all, delete-orphan"
-    )
+    trips = relationship("Trip", back_populates="user", cascade="all, delete-orphan")
 
