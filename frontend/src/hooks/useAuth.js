@@ -1,9 +1,8 @@
-// Placeholder hook - will manage auth state in later phase
+import { useContext } from "react";
+import AuthContext from "../context/AuthContext";
+
 export default function useAuth() {
-  return {
-    user: null,
-    isAuthenticated: false,
-    login: () => {},
-    logout: () => {},
-  };
+  const ctx = useContext(AuthContext);
+  if (!ctx) throw new Error("useAuth must be used within AuthProvider");
+  return ctx;
 }

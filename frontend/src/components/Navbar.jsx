@@ -1,4 +1,5 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
 
 const navLinkClass = ({ isActive }) =>
   `px-3 py-2 rounded-md text-sm font-medium transition-colors ${
@@ -8,6 +9,13 @@ const navLinkClass = ({ isActive }) =>
   }`;
 
 export default function Navbar() {
+  const { isAuthenticated, user, logout } = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    logout();
+    navigate("/login");
+  };
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-slate-200">
       <nav className="container-app flex h-16 items-center justify-between">
@@ -31,18 +39,31 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-2">
-          <NavLink
-            to="/login"
-            className="text-sm font-medium text-slate-600 hover:text-slate-900 px-3 py-2"
-          >
-            Login
-          </NavLink>
-          <NavLink
-            to="/register"
-            className="btn-primary text-sm"
-          >
-            Register
-          </NavLink>
+          {isAuthenticated ? (
+            <>
+              <span className="hidden sm:inline text-sm text-slate-700 font-medium px-2">
+                {user?.name || user?.email}
+              </span>
+              <button
+                onClick={handleLogout}
+                className="text-sm font-medium text-slate-600 hover:text-red-600 px-3 py-2 border border-slate-200 rounded-lg hover:bg-red-50"
+              >
+                Logout
+              </button>
+            </>
+          ) : (
+            <>
+              <NavLink
+                to="/login"
+                className="text-sm font-medium text-slate-600 hover:text-slate-900 px-3 py-2"
+              >
+                Login
+              </NavLink>
+              <NavLink to="/register" className="btn-primary text-sm">
+                Register
+              </NavLink>
+            </>
+          )}
         </div>
       </nav>
 
