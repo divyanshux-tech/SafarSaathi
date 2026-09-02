@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import api from "../services/api";
+import useAuth from "../hooks/useAuth";
 
 export default function Home() {
   const [apiStatus, setApiStatus] = useState("checking");
+  const { isAuthenticated, user } = useAuth();
 
   useEffect(() => {
     const base = import.meta.env.VITE_API_BASE_URL;
@@ -37,16 +39,38 @@ export default function Home() {
           experience smarter journeys.
         </p>
 
+        {isAuthenticated && (
+          <p className="mt-3 text-sm text-emerald-700 bg-emerald-50 border border-emerald-200 inline-block px-3 py-1 rounded-full">
+            Logged in as {user?.name} ({user?.email})
+          </p>
+        )}
+
         <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <Link to="/dashboard" className="btn-primary px-6 py-3">
-            Go to Dashboard
-          </Link>
-          <Link
-            to="/trips"
-            className="px-6 py-3 rounded-lg border border-slate-300 bg-white hover:bg-slate-50 font-medium transition-colors"
-          >
-            Explore Trips
-          </Link>
+          {isAuthenticated ? (
+            <>
+              <Link to="/dashboard" className="btn-primary px-6 py-3">
+                Go to Dashboard
+              </Link>
+              <Link
+                to="/trips"
+                className="px-6 py-3 rounded-lg border border-slate-300 bg-white hover:bg-slate-50 font-medium transition-colors"
+              >
+                Explore Trips
+              </Link>
+            </>
+          ) : (
+            <>
+              <Link to="/register" className="btn-primary px-6 py-3">
+                Get Started
+              </Link>
+              <Link
+                to="/login"
+                className="px-6 py-3 rounded-lg border border-slate-300 bg-white hover:bg-slate-50 font-medium transition-colors"
+              >
+                Login
+              </Link>
+            </>
+          )}
         </div>
 
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
@@ -77,9 +101,9 @@ export default function Home() {
             </p>
           </div>
           <div className="card">
-            <h3 className="font-semibold text-slate-900">Next Phase</h3>
+            <h3 className="font-semibold text-slate-900">Auth Status</h3>
             <p className="text-sm text-slate-600 mt-1">
-              Auth & Trip APIs integration coming soon.
+              {isAuthenticated ? `Authenticated ✓ (${user?.email})` : "Not logged in — Login/Register ready"}
             </p>
           </div>
         </div>

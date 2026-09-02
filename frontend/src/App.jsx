@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
+import ProtectedRoute from "./components/ProtectedRoute";
 
 import Home from "./pages/Home";
 import Login from "./pages/Login";
@@ -13,14 +14,38 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Layout-wrapped routes */}
         <Route element={<MainLayout />}>
+          {/* Public */}
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/trips" element={<Trips />} />
-          <Route path="/trips/create" element={<CreateTrip />} />
+
+          {/* Protected */}
+          <Route
+            path="/dashboard"
+            element={
+              <ProtectedRoute>
+                <Dashboard />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/trips"
+            element={
+              <ProtectedRoute>
+                <Trips />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/trips/create"
+            element={
+              <ProtectedRoute>
+                <CreateTrip />
+              </ProtectedRoute>
+            }
+          />
+
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
