@@ -1,8 +1,7 @@
 from fastapi import FastAPI
 
 from app.routers.auth import router as auth_router
-
-from app.routers.travel_profile import router as travel_profile_router
+from app.routers.trip import router as trip_router
 
 app = FastAPI(
     title="SafarSaathi API",
@@ -11,10 +10,7 @@ app = FastAPI(
 )
 
 app.include_router(auth_router)
-
-app.include_router(travel_profile_router)
-
-app.include_router(auth_router)
+app.include_router(trip_router)
 
 @app.get("/")
 def root():
