@@ -8,6 +8,8 @@ import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import Trips from "./pages/Trips";
 import CreateTrip from "./pages/CreateTrip";
+import TripDetailsPage from "./pages/TripDetailsPage";
+import EditTrip from "./pages/EditTrip";
 import NotFound from "./pages/NotFound";
 
 export default function App() {
@@ -42,6 +44,22 @@ export default function App() {
             element={
               <ProtectedRoute>
                 <CreateTrip />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/trips/:id"
+            element={
+              <ProtectedRoute>
+                <TripDetailsPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/trips/:id/edit"
+            element={
+              <ProtectedRoute>
+                <EditTrip />
               </ProtectedRoute>
             }
           />
