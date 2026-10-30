@@ -13,7 +13,7 @@ export default function ActivityCard({ candidate, onSelect }) {
           {candidate.category}
         </Badge>
         <div className="text-right">
-          <span className="font-display font-medium text-lg text-nura-dark">
+          <span className="font-display font-medium text-lg text-safar-dark">
             ₹{candidate.price_inr}
           </span>
           <p className="text-[10px] text-gray-400 uppercase tracking-wide">Per Person</p>
@@ -44,7 +44,7 @@ export default function ActivityCard({ candidate, onSelect }) {
         {onSelect && (
           <button 
             onClick={() => onSelect(candidate)}
-            className="shrink-0 px-4 py-1.5 bg-nura-dark text-white text-xs font-medium rounded-full hover:bg-black transition-colors"
+            className="shrink-0 px-4 py-1.5 bg-safar-dark text-white text-xs font-medium rounded-full hover:bg-black transition-colors"
           >
             Add
           </button>

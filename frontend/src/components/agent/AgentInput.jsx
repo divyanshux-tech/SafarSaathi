@@ -144,7 +144,7 @@ export const AgentInput = ({ onSubmit, isLoading, placeholder = "Describe your t
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
               placeholder={isTranscribing ? "Listening..." : placeholder}
-              className="w-full bg-transparent outline-none border-none text-nura-dark text-[15px] font-sans placeholder:text-[#888] px-5 py-3 pr-12"
+              className="w-full bg-transparent outline-none border-none text-safar-dark text-[15px] font-sans placeholder:text-[#888] px-5 py-3 pr-12"
             />
             {/* Transcription Mic Button (Inside Input) */}
             <button
@@ -152,7 +152,7 @@ export const AgentInput = ({ onSubmit, isLoading, placeholder = "Describe your t
               onClick={toggleTranscription}
               className={cn(
                 "absolute right-2 flex items-center justify-center w-[32px] h-[32px] rounded-full transition-colors",
-                isTranscribing ? "bg-red-100 text-red-500 animate-pulse" : "text-[#555] hover:bg-gray-100 hover:text-nura-dark"
+                isTranscribing ? "bg-red-100 text-red-500 animate-pulse" : "text-[#555] hover:bg-gray-100 hover:text-safar-dark"
               )}
               title="Dictate message"
             >

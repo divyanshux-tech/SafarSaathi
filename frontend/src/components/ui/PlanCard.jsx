@@ -16,7 +16,7 @@ export default function PlanCard({ plan, onSelect }) {
       <h3 className="font-sans font-semibold text-gray-900 mb-1">Trip Plan</h3>
       
       <div className="mb-4">
-        <span className="text-2xl font-display font-medium text-nura-dark">₹{plan.total_cost_inr.toLocaleString()}</span>
+        <span className="text-2xl font-display font-medium text-safar-dark">₹{plan.total_cost_inr.toLocaleString()}</span>
         <span className="text-xs text-green-600 ml-2 font-medium">Save ₹{plan.savings_vs_budget_inr.toLocaleString()}</span>
       </div>
 
@@ -61,7 +61,7 @@ export default function PlanCard({ plan, onSelect }) {
       {/* Action */}
       <button 
         onClick={() => onSelect(plan.plan_id)}
-        className="mt-6 w-full bg-nura-dark text-white rounded-lg py-2 text-sm font-medium hover:bg-gray-800 transition-colors"
+        className="mt-6 w-full bg-safar-dark text-white rounded-lg py-2 text-sm font-medium hover:bg-gray-800 transition-colors"
       >
         Select Plan
       </button>

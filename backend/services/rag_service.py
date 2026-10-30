@@ -119,7 +119,7 @@ async def answer(query: str, top_k: int = 3, language: str = "en", trip_id: str 
 
     # ── Step 3: Gemini synthesis — rich, human-sounding answer ───────────────
     lang_hint = "Reply in Hindi/Hinglish" if language in ["hi", "hinglish"] else "Reply in English"
-    synthesis_prompt = f"""You are Nura, India's most knowledgeable travel expert.
+    synthesis_prompt = f"""You are SafarSaathi, India's most knowledgeable travel expert.
 Answer the travel question below. Be warm, specific, and practical — like a well-travelled friend.
 
 Guidelines:

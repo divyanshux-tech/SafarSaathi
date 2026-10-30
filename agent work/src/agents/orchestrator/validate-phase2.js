@@ -83,7 +83,7 @@ const TEST_PHRASES = [
 ];
 
 async function run() {
-  console.log('\n🧪 Plan Through Us — Phase 2 Orchestrator Agent Validation\n');
+  console.log('\n🧪 SafarSaathi — Phase 2 Orchestrator Agent Validation\n');
 
   let testUser;
   try {

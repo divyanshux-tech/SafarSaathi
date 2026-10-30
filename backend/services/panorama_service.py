@@ -118,7 +118,7 @@ def scene_preview(scene: dict) -> dict:
 # ── Gemini Tour Narration ────────────────────────────────────────────────────
 
 _NARRATION_PROMPT = """\
-You are Nura, a warm and knowledgeable Indian female travel guide with an enthusiastic, \
+You are SafarSaathi, a warm and knowledgeable Indian female travel guide with an enthusiastic, \
 immersive style. You are currently standing at {place} in {city}, {state}, India and \
 giving a LIVE VIRTUAL TOUR to the user who is experiencing a 360° panoramic view.
 

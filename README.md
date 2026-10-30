@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=42&pause=1000&color=6366F1&center=true&vCenter=true&width=700&lines=Plan+Through+Us+%E2%9C%88%EF%B8%8F;Nura+AI+%E2%80%94+Your+Travel+Co-Pilot+%F0%9F%8C%8D;Voice-First.+India-Focused.+Agent-Native." alt="Plan Through Us" />
+<img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=700&size=42&pause=1000&color=6366F1&center=true&vCenter=true&width=700&lines=SafarSaathi+%E2%9C%88%EF%B8%8F;Your+Travel+Co-Pilot+%F0%9F%8C%8D;Voice-First.+India-Focused.+Agent-Native." alt="SafarSaathi" />
 
 <br/>
 
@@ -44,7 +44,7 @@
 
 ## 🧭 What Is This?
 
-**Plan Through Us** (powered by **Nura AI**) is not a search engine. Not a chatbot. It is a **production-grade, voice-first AI travel co-pilot** — a swarm of specialised agents that collaborates in real time to plan, optimise, and book an end-to-end trip for Indian travelers, in their language.
+**SafarSaathi** is not a search engine. Not a chatbot. It is a **production-grade, voice-first AI travel co-pilot** — a swarm of specialised agents that collaborates in real time to plan, optimise, and book an end-to-end trip for Indian travelers, in their language.
 
 > **"मुझे अक्टूबर में पाँच दिन केरल जाना है ₹30,000 में"**
 > → Real day-by-day itinerary, train + hotel + activities, spoken back in Hindi. ✅
@@ -801,12 +801,12 @@ Build strictly in this sequence — each phase is testable before the next begin
 
 ## 🌍 Real Problems This Solves
 
-| Problem | How Nura fixes it |
+| Problem | How SafarSaathi helps |
 |---|---|
-| **Language barrier in digital travel** | Most platforms are English-only. Nura works in Hindi, Hinglish, Tamil, Telugu, Bengali, Marathi — entirely by voice. |
+| **Language barrier in digital travel** | Most platforms are English-only. SafarSaathi works in Hindi, Hinglish, Tamil, Telugu, Bengali, Marathi — entirely by voice. |
 | **Price opacity + hidden costs** | Shared-wallet model with transparent "booked vs estimated" breakdown. No ₹5k flight becoming a ₹40k trip surprise. |
 | **Overtourism at popular sites** | ≥20% of every recommendation slate is a lesser-known destination. Sustainable Choice plan actively routes demand away from Goa/Jaipur. |
-| **Train vs flight blind spot** | Indian trains carry 8 billion passengers/year. No major travel AI treats them as genuine alternatives. Nura does. |
+| **Train vs flight blind spot** | Indian trains carry 8 billion passengers/year. SafarSaathi treats them as genuine alternatives to flying. |
 | **Cold-start uselessness** | Content + seasonality scorer makes useful first recommendations without any prior user data. |
 | **Post-booking abandonment** | Packing checklist, document vault, and live flight tracker extend the agent's value through the trip itself. |
 

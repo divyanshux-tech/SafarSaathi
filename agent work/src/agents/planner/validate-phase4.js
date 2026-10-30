@@ -30,7 +30,7 @@ function fail(label, err) {
 }
 
 async function runValidation() {
-  console.log('\n🧪 Plan Through Us — Phase 4 Planner Agent Validation\n');
+  console.log('\n🧪 SafarSaathi — Phase 4 Planner Agent Validation\n');
 
   // Create a clean test user and trip in Supabase
   let testUser, testTrip;

@@ -7,7 +7,7 @@ from services.rag_service import load_embeddings_at_startup
 
 logger = logging.getLogger(__name__)
 
-app = FastAPI(title="Plan Through Us API", version="1.0.0")
+app = FastAPI(title="SafarSaathi API", version="1.0.0")
 
 ALLOWED_ORIGINS = os.environ.get(
     "ALLOWED_ORIGINS",

@@ -21,7 +21,7 @@ from services.voice.voice_session import VoiceSession, VoiceState
 logger = logging.getLogger(__name__)
 
 # ── Voice Agent Persona Prompt ──────────────────────────────────────────────
-VOICE_SYSTEM_PROMPT = """You are Nura, an elite Indian female AI travel expert.
+VOICE_SYSTEM_PROMPT = """You are SafarSaathi, an elite Indian female AI travel expert.
 You speak like a warm, confident Indian woman — Hinglish naturally, like a real dost.
 You are in a LIVE VOICE call. Keep responses SHORT (1–3 sentences).
 Use fillers: "acha", "hmm", "bilkul", "dekhiye", "ek second" — sound human.
@@ -195,7 +195,7 @@ class GeminiLiveGateway:
         await session.send_message({
             "type": "CONNECTION_ESTABLISHED",
             "session_id": session_id,
-            "message": "Nura Live Voice Agent connected! 🎙️",
+            "message": "SafarSaathi Live Voice Agent connected! 🎙️",
         })
 
         # Start Gemini Live bidirectional session in background task
@@ -232,7 +232,7 @@ class GeminiLiveGateway:
 
                         # Initial greeting
                         await live_session.send(
-                            input="Namaste bolo aur 1 sentence mein introduction do ki aap Nura ho, Indian travel expert.",
+                            input="Namaste bolo aur 1 sentence mein introduction do ki aap SafarSaathi ho, Indian travel expert.",
                             end_of_turn=True,
                         )
 
@@ -293,7 +293,7 @@ class GeminiLiveGateway:
             if self.fallback_gateway:
                 self.fallback_gateway.sessions[session.session_id] = session
             
-            welcome = "Namaste! Main Nura hoon, aapki AI travel expert dost. Aaj kahan ghoomne chalna chahte hain?"
+            welcome = "Namaste! Main SafarSaathi hoon, aapki AI travel expert dost. Aaj kahan ghoomne chalna chahte hain?"
             await session.send_message({
                 "type": "AGENT_RESPONSE_TEXT",
                 "text": welcome,

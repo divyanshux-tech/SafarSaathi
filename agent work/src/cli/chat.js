@@ -1,6 +1,6 @@
 // ============================================================
 // src/cli/chat.js
-// Interactive CLI Chatbot for "Plan Through Us" platform.
+// Interactive CLI Chatbot for the SafarSaathi platform.
 //
 // Run with: npm run chat (or node src/cli/chat.js)
 // ============================================================
@@ -12,7 +12,7 @@ const { processUserMessage } = require('../agents/orchestrator/orchestrator');
 
 async function startChat() {
   console.log('\n============================================================');
-  console.log('✈️   Plan Through Us — Hinglish AI Travel Planning Platform');
+  console.log('✈️   SafarSaathi — Hinglish AI Travel Planning Platform');
   console.log('============================================================');
   console.log('Type your message in Hinglish or English (e.g. "Delhi se 5 din ke liye 2 log Goa budget 40k").');
   console.log('Type "exit" or "quit" to stop.\n');

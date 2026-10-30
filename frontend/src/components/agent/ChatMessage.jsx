@@ -6,7 +6,7 @@
  *  - role=agent    : left-aligned bubble with markdown rendering
  *  - role=thinking : animated dots with optional text
  *  - role=tool_steps: progress steps list
- *  - role=cards    : (handled by NuraAgentDashboard, not here)
+ *  - role=cards    : (handled by SafarSaathiDashboard, not here)
  *
  * Markdown rendering:
  *  - **bold** → <strong>

@@ -2,10 +2,10 @@ import React from 'react';
 import { cn } from '../../utils/cn';
 
 const variantStyles = {
-  primary: 'bg-nura-gradient text-white hover:opacity-90 hover:shadow-glow',
-  secondary: 'bg-white text-nura-orange border border-nura-orange hover:bg-nura-light',
-  glass: 'glass-pill text-nura-dark hover:bg-white/80',
-  ghost: 'text-nura-dark hover:bg-black/5',
+  primary: 'bg-safar-gradient text-white hover:opacity-90 hover:shadow-glow',
+  secondary: 'bg-white text-safar-orange border border-safar-orange hover:bg-safar-light',
+  glass: 'glass-pill text-safar-dark hover:bg-white/80',
+  ghost: 'text-safar-dark hover:bg-black/5',
 };
 
 const sizeStyles = {

@@ -30,7 +30,7 @@ from services.voice.voice_session import VoiceSession, VoiceState
 # ──────────────────────────────────────────────────────────────────────────────
 # Persona + System Prompt (Female Indian travel expert)
 # ──────────────────────────────────────────────────────────────────────────────
-VOICE_SYSTEM_PROMPT = """You are Nura, an elite Indian AI travel expert. You speak like a warm, witty Indian woman who loves travel.
+VOICE_SYSTEM_PROMPT = """You are SafarSaathi, an elite Indian AI travel expert. You speak like a warm, witty Indian woman who loves travel.
 You are currently in a VOICE conversation — be concise and natural.
 
 PERSONALITY:
@@ -139,7 +139,7 @@ class VoiceGateway:
         logger.info(f"Voice session {session_id} connected (user: {user_id})")
 
         # Send warm welcome
-        welcome_text = "Namaste! Main Nura hoon, aapki AI travel expert. Aaj kahan jaana chahte hain?"
+        welcome_text = "Namaste! Main SafarSaathi hoon, aapki AI travel expert. Aaj kahan jaana chahte hain?"
         await session.send_message({
             "type": "CONNECTION_ESTABLISHED",
             "session_id": session_id,
@@ -673,7 +673,7 @@ class VoiceGateway:
         for vid in session.tour_visited[:-1]:  # exclude current
             visited_names.append(vid)
 
-        prompt = f"""You are Nura, an Indian female AI travel guide giving a LIVE 3D virtual tour.
+        prompt = f"""You are SafarSaathi, an Indian female AI travel guide giving a LIVE 3D virtual tour.
 The user is now viewing a 360° panoramic scene of: {scene['name']}, {scene['city']}, {scene['state']}.
 
 Scene description: {scene.get('description', '')}

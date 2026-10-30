@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        nura: {
+        safar: {
           orange: '#FF6B4A',
           pink: '#F02FC2',
           purple: '#A23CFD',
@@ -22,8 +22,8 @@ export default {
         mono:    ['JetBrains Mono', 'Fira Code', 'monospace'],
       },
       backgroundImage: {
-        'nura-gradient': 'linear-gradient(135deg, #FF6B4A 0%, #F02FC2 50%, #A23CFD 100%)',
-        'nura-radial': 'radial-gradient(circle at var(--x, 50%) var(--y, 50%), #F02FC2 0%, #FF6B4A 40%, transparent 80%)',
+        'safar-gradient': 'linear-gradient(135deg, #FF6B4A 0%, #F02FC2 50%, #A23CFD 100%)',
+        'safar-radial': 'radial-gradient(circle at var(--x, 50%) var(--y, 50%), #F02FC2 0%, #FF6B4A 40%, transparent 80%)',
       },
       boxShadow: {
         'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.07)',

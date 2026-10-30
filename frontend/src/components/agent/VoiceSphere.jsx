@@ -88,7 +88,7 @@ export const VoiceSphere = ({
     state === 'IDLE'       ? (isConnected ? 'Tap to speak' : 'Ready to start') :
     state === 'LISTENING'  ? 'Listening...' :
     state === 'PROCESSING' ? 'Thinking...' :
-    state === 'SPEAKING'   ? 'Nura is speaking' : '';
+    state === 'SPEAKING'   ? 'SafarSaathi is speaking' : '';
 
   const notStarted = !isConnected && state === 'IDLE';
 

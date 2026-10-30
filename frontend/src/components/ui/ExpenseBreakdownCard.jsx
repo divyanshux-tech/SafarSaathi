@@ -35,7 +35,7 @@ export default function ExpenseBreakdownCard({ estimate }) {
       
       {/* Total with Tilde Prefix */}
       <div className="mb-5">
-        <span className="text-3xl font-display font-medium text-nura-dark">~₹{estimate.total_estimate_inr.toLocaleString()}</span>
+        <span className="text-3xl font-display font-medium text-safar-dark">~₹{estimate.total_estimate_inr.toLocaleString()}</span>
         <span className="text-xs text-gray-400 ml-2 uppercase tracking-wide">Total Est.</span>
       </div>
 

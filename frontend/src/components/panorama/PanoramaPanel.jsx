@@ -300,7 +300,7 @@ export default function PanoramaPanel({ scene, narration, relatedScenes = [], qu
                 animation: ttsEnabled ? 'pulseDot 2s ease infinite' : 'none',
               }} />
               <span style={{ fontSize: 11, color: catStyle.accent, fontWeight: 600 }}>
-                NURA — TOUR GUIDE
+                SAFARSAATHI — TOUR GUIDE
               </span>
             </div>
             <p style={{

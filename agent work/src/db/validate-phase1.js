@@ -38,7 +38,7 @@ function fail(label, err) {
 }
 
 async function run() {
-  console.log('\n🧪 Plan Through Us — Phase 1 Validation\n');
+  console.log('\n🧪 SafarSaathi — Phase 1 Validation\n');
 
   // ── Test 1: Tables exist ────────────────────────────────
   console.log('1️⃣  Verifying tables exist...');

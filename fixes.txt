@@ -540,7 +540,7 @@ async def _generate_scene_narration(self, scene: dict, lang: str, session: Voice
         # We'd need a reverse lookup — simplify by storing names
         visited_names.append(vid)
 
-    prompt = f"""You are Nura, an Indian female AI travel guide giving a LIVE 3D virtual tour.
+    prompt = f"""You are SafarSaathi, an Indian female AI travel guide giving a LIVE 3D virtual tour.
 The user is now viewing a 360° panoramic scene of: {scene['name']}, {scene['city']}, {scene['state']}.
 
 Scene description: {scene.get('description', '')}

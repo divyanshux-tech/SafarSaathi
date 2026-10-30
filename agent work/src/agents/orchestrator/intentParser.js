@@ -6,7 +6,7 @@
 
 const { getGeminiClient, DEFAULT_MODEL } = require('./geminiClient');
 
-const SYSTEM_PROMPT = `You are the NLU (Natural Language Understanding) brain for "Plan Through Us", a Hinglish travel planning platform in India.
+const SYSTEM_PROMPT = `You are the NLU (Natural Language Understanding) brain for SafarSaathi, a Hinglish travel planning platform in India.
 Your job is to parse free-form user chat messages (written in English, Hinglish transliteration, or Hindi script) and extract structured trip intent and slots.
 
 Recognized Action Intents:

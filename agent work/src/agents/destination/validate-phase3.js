@@ -31,7 +31,7 @@ function fail(label, err) {
 }
 
 async function run() {
-  console.log('\n🧪 Plan Through Us — Phase 3 Destination Recommendation Agent Validation\n');
+  console.log('\n🧪 SafarSaathi — Phase 3 Destination Recommendation Agent Validation\n');
 
   // ── Test 1: Recommend shortlist without live provider APIs ────────
   console.log('1️⃣  Testing destination recommendation shortlist generation...');

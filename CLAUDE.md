@@ -1,7 +1,7 @@
-# Project Context: Plan Through Us (Nura AI)
+# Project Context: SafarSaathi
 
 ## Overview
-This is an AI travel agent project called "Plan Through Us" (powered by Nura AI) - a voice-first AI travel co-pilot for Indian travelers that understands Hindi, Hinglish, or English, searches real flights/trains/hotels, builds budget-optimized itineraries, and books everything in one conversation.
+This is the SafarSaathi AI travel agent project - a voice-first AI travel co-pilot for Indian travelers that understands Hindi, Hinglish, or English, searches real flights/trains/hotels, builds budget-optimized itineraries, and books everything in one conversation.
 
 Key features from README:
 - Voice-first input/output with Bhashini ASR/TTS

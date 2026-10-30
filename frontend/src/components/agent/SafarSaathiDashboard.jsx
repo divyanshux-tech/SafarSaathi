@@ -1,5 +1,5 @@
 /**
- * NuraAgentDashboard — Production-grade Voice + Text Travel Agent UI
+ * SafarSaathiDashboard — Production-grade Voice + Text Travel Agent UI
  *
  * VOICE PIPELINE:
  *   - Start button on the orb → MediaRecorder → WebSocket → Groq Whisper ASR
@@ -184,7 +184,7 @@ const QuickChip = ({ label, onClick }) => (
 );
 
 // ═══════════════════════════════════════════════════════════════════════════════
-export const NuraAgentDashboard = () => {
+export const SafarSaathiDashboard = () => {
   const navigate = useNavigate();
   const [isSidebarOpen,  setIsSidebarOpen]  = useState(false);
   const [isVoiceMode,    setIsVoiceMode]    = useState(false);
@@ -1411,9 +1411,9 @@ export const NuraAgentDashboard = () => {
             /* ── Landing / Inactive ──────────────────────────────────── */
             <motion.div key="inactive" initial={{ opacity: 0, scale: 0.98 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.98 }}
               className="w-full h-full flex flex-col relative overflow-hidden"
-              style={{ background: 'linear-gradient(-45deg,#FFF0F5,#FFFFFF,#FFE4E1,#F8F4FF,#FFF0EE)', backgroundSize: '400% 400%', animation: 'slow-gradient-nura 15s ease infinite' }}
+              style={{ background: 'linear-gradient(-45deg,#FFF0F5,#FFFFFF,#FFE4E1,#F8F4FF,#FFF0EE)', backgroundSize: '400% 400%', animation: 'slow-gradient-safar 15s ease infinite' }}
             >
-              <style>{`@keyframes slow-gradient-nura{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}`}</style>
+              <style>{`@keyframes slow-gradient-safar{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}`}</style>
               <div className="absolute bottom-[-10%] left-[-10%] w-[50%] h-[50%] bg-[#FF8A65]/20 rounded-full blur-[100px] animate-pulse pointer-events-none" style={{ animationDuration: '8s' }} />
               <div className="absolute top-[-10%] right-[-10%] w-[50%] h-[50%] bg-[#A23CFD]/15 rounded-full blur-[100px] animate-pulse pointer-events-none" style={{ animationDuration: '10s' }} />
 

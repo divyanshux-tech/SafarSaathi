@@ -1,4 +1,4 @@
-  # Plan Through Us — AI Travel Agent
+  # SafarSaathi — AI Travel Agent
   ### Full Implementation Plan · Hinglish-First · Voice-Native · India-Focused
 
   > **What this agent is:** A smart, voice-first AI travel co-pilot that understands you in Hindi, Hinglish, or English — searches real flights, trains, and hotels, builds a budget-optimised itinerary, and books everything in one conversation. Not a search engine. Not a chatbot. A travel partner that does the work.
