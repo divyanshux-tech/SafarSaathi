@@ -1,29 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Playfair+Display:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Global base styles - SafarSaathi clean foundation */
 @layer base {
-  html {
-    scroll-behavior: smooth;
+  * {
+    box-sizing: border-box;
+    margin: 0;
   }
+
   body {
-    @apply bg-slate-50 text-slate-900 font-sans antialiased;
-  }
-  #root {
-    @apply min-h-screen flex flex-col;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #1C1917;
+    background-color: #FAFAF9;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
 }
 
-/* Reusable utilities for future phases */
 @layer components {
-  .container-app {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  .glass-panel {
+    @apply bg-white/60 backdrop-blur-glass border border-white/40 shadow-glass rounded-3xl;
   }
-  .card {
-    @apply bg-white rounded-xl shadow-sm border border-slate-200 p-6;
+  
+  .glass-pill {
+    @apply bg-white/60 backdrop-blur-glass border border-white/40 shadow-glass-sm rounded-full;
   }
-  .btn-primary {
-    @apply bg-sky-600 text-white px-4 py-2 rounded-lg hover:bg-sky-700 transition-colors font-medium;
-  }
-}
+}@keyframes shimmer { 100% { transform: translateX(100%); } }

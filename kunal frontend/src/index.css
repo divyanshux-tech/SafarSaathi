@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global base styles - SafarSaathi clean foundation */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans antialiased;
+  }
+  #root {
+    @apply min-h-screen flex flex-col;
+  }
+}
+
+/* Reusable utilities for future phases */
+@layer components {
+  .container-app {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .card {
+    @apply bg-white rounded-xl shadow-sm border border-slate-200 p-6;
+  }
+  .btn-primary {
+    @apply bg-sky-600 text-white px-4 py-2 rounded-lg hover:bg-sky-700 transition-colors font-medium;
+  }
+}
